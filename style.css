@@ -20,6 +20,22 @@ nav a { text-decoration: none; color: var(--text); font-weight: 600; }
 .hero h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.1; font-weight: 800; }
 .hero span { color: var(--accent); }
 
+/* Seleccionamos el contenedor que tiene el margen superior de 20 */
+.mt-20 {
+    width: 100%;           /* Ocupa el 100% del ancho */
+    max-width: 100% !important; /* Sobrescribimos el max-width-3xl para que no lo limite */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centra los párrafos horizontalmente */
+    justify-content: center;
+}
+
+/* Centramos el texto dentro de los párrafos */
+.mt-20 p {
+    text-align: center;    /* Justifica el texto al medio */
+    width: 100%;           /* Asegura que el párrafo use todo el ancho para centrar */
+}
+
 /* Case Study Card */
 .case-study-card { 
     display: grid; grid-template-columns: 1fr 1fr; gap: 50px; 
